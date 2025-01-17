@@ -1,2 +1,5 @@
 # SaaSafRaaS
-Digital Minion SaaSafRaaS The Ultimate AWS Amplify SaaS Kickstart Template
+Digital Minion SaaSafRaaS The Ultimate B2B SaaS Kickstart Template
+
+# Purpose
+
