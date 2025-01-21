@@ -1,5 +1,5 @@
-# SaaSafRaaS
-Digital Minion SaaSafRaaS The Ultimate B2B SaaS Kickstart Template. 
+# SaaS-sa-FraaS
+Digital Minion SaaS-sa-FraaS The Ultimate B2B SaaS Kickstart Template. 
 
 A TypeScript library for frontend and mobile developers building cloud-enabled applications
 
