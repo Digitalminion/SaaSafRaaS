@@ -1,0 +1,187 @@
+/*!
+ * SaaS-sa-Fraas
+ * Copyright © 2025 Digital Minion (digitalminion.com)
+ * 
+ * Repository: https://github.com/digitalminion/SaaS-sa-Fraas
+ * Author: @dataminion
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at:
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+@use 'sass:map';
+@use '@angular/material' as mat;  
+
+
+@mixin theme-apply($color, $scheme) {
+    $primary: map.get($color, primary);
+    $tertiary: map.get($color, tertiary);
+    $neutral-color: mat.get-theme-color($color, neutral,80);
+    $theme: mat.define-theme((
+        color: (
+          theme-type: $scheme,
+          primary: $primary,
+          tertiary: $tertiary,
+        )
+      ));
+    @include mat.theme((
+    color: (
+        theme-type: $scheme,
+        primary: $primary,
+        tertiary: $tertiary,
+    )
+    ));
+    html {
+        color-scheme: $scheme;
+      }
+    body { 
+        background: var(--mat-sys-primary);
+        background-color: var(--mat-sys-primary);
+        color: var(--mat-sys-on-primary);
+        margin: 0; 
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+    }
+    .primary-color {
+        color: var(--mat-sys-primary) !important;
+    }
+    .accent-color {
+        color: var(--mat-sys-secondary) !important;
+    }
+    .warn-color {
+        color: var(--mat-sys-error) !important;
+    }
+    .default-contrast {
+        color: var(--mat-sys-on-primary) !important;
+    }
+
+    .bg-primary {
+        background: var(--mat-sys-primary);
+        color: var(--mat-sys-on-primary);
+    }
+    .bg-accent {
+        background: var(--mat-sys-secondary);
+        color: var(--mat-sys-on-secondary);
+    }
+    .bg-warn {
+        background: var(--mat-sys-error-container);
+        color: var(--mat-sys-on-error-container);
+    }
+
+    .secondary-text-color {
+        color: var(--mat-sys-on-surface-variant);
+    }
+
+    .mat-mdc-icon-button:not(.mat-primary, .mat-accent, .mat-warn, .mat-mdc-button-disabled) {
+        color: var(--mat-sys-on-surface);
+    }
+
+    .header {
+        background: var(--mat-sys-surface);
+        color: var(--mat-sys-on-surface);
+        .info-content {
+            .top-contact-form {
+                border-color: var(--mat-sys-outline);
+            }
+        }
+    }
+
+    .content-header h4 {
+        color: var(--mat-sys-primary-light);
+    }
+
+    .favorites-container:after {
+        color: var(--mat-sys-secondary);
+    }
+
+    .horizontal-menu {
+        background: var(--mat-sys-surface);
+    }
+    .horizontal-menu-item {
+        .horizontal-sub-menu {
+            background: var(--mat-sys-surface);
+        }
+        .mat-mdc-button {
+            color: var(--mat-sys-on-surface-variant);
+            .horizontal-menu-title {
+                color: var(--mat-sys-on-surface);
+            }
+            &.parent-item {
+                .horizontal-menu-icon {
+                    background: var(--mat-sys-surface-variant);
+                    color: var(--mat-sys-on-surface);
+                }
+                &.active-link {
+                    background: var(--mat-sys-surface-variant);
+                    .horizontal-menu-icon {
+                        background: var(--mat-sys-primary);
+                        color: var(--mat-sys-on-primary);
+                    }
+                }
+            }
+        }
+    }
+
+    .top-toolbar,
+    .landing-toolbar {
+        --mat-sys-primary-dark: #{mat.get-theme-color($color, primary, 40) };
+        background: var(--mat-sys-primary-dark);
+        color: var(--mat-sys-primary-light);
+        .mdc-icon-button {
+            color: var(--mat-sys-on-primary);
+        }
+    }
+
+    .menu-item {
+        .mat-mdc-button {
+            .menu-icon {
+                background: var(--mat-sys-surface-variant);
+                color: var(--mat-sys-on-surface-variant);
+            }
+            .menu-title {
+                color: var(--mat-sys-on-surface);
+            }
+            &.active-link {
+                background: var(--mat-sys-surface-variant);
+                .menu-icon {
+                    background: var(--mat-sys-primary);
+                    color: var(--mat-sys-on-primary);
+                }
+            }
+        }
+    }
+    .menu-toolbar {
+        background: var(--mat-sys-primary-dark);
+        color: var(--mat-sys-primary-light);
+    }
+    .menu-expand-icon {
+        color: var(--mat-sys-on-surface-variant);
+    }
+
+    .sidenav{
+        background-color: var(--mdc-elevated-card-container-color);
+    }
+
+    .breadcrumb a {
+        color: var(--mat-sys-primary-light);
+    }
+
+    .testimonial-item,
+    .pricing-card {
+        border-top: 4px solid var(--mat-sys-secondary);
+    }
+    
+    #dm-spinner {
+        background: var(--mat-sys-surface);
+    }
+
+    @include mat.all-component-colors($theme);
+}

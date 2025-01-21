@@ -17,3 +17,32 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+ @use 'sass:map';
+ @use '@angular/material' as mat;
+ @use './theme-mixin' as apply;
+ @use "palette/indigo" as indigo-palette;
+ @use "palette/blue" as blue-palette;
+ @use "palette/brown" as brown-palette;
+ 
+ 
+ .app{
+     &.indigo-light{
+         @include apply.theme-apply(indigo-palette.$theme, 'light');
+     }
+     &.indigo-dark{
+         @include apply.theme-apply(indigo-palette.$theme, 'dark');
+     }
+     &.blue-light{
+         @include apply.theme-apply(blue-palette.$theme, 'light');
+     }
+     &.blue-dark{
+         @include apply.theme-apply(blue-palette.$theme, 'dark');
+     }
+     &.brown-light{
+         @include apply.theme-apply(brown-palette.$theme, 'light');
+     }
+     &.brown-dark{
+         @include apply.theme-apply(brown-palette.$theme, 'dark');
+     }
+ }
