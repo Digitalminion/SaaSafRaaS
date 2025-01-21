@@ -1,0 +1,552 @@
+/*!
+ * SaaS-sa-Fraas
+ * Copyright © 2025 Digital Minion (digitalminion.com)
+ * 
+ * Repository: https://github.com/digitalminion/SaaS-sa-Fraas
+ * Author: @dataminion
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at:
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+
+
+ *            *****************************
+ *                        Spaces
+ *            *****************************
+ 
+ 
+ *
+ * Margin and Padding Utility Classes (Using `rem` Units)
+ * 
+ * This SCSS file defines utility classes for applying consistent margin and 
+ * padding spacing across the project. The units used are `rem`, which are 
+ * relative to the root font size (`<html>`). This ensures accessibility and 
+ * consistency in responsive designs.
+ * 
+ * Key Details:
+ * - `rem` stands for "root em" and is calculated relative to the font size of 
+ *   the root element (`<html>`). For example, if the root font size is `16px`:
+ *     - `1rem = 16px`
+ *     - `0.25rem = 4px`
+ * 
+ * Purpose:
+ * - These utility classes allow developers to quickly apply spacing (margin 
+ *   and padding) without writing custom CSS for each component.
+ * - The use of `!important` ensures these utility classes override any default 
+ *   or conflicting styles, making them reliable for rapid prototyping or 
+ *   customization.
+ * 
+ * Class Naming Convention:
+ * - `.m-*`: Sets all margins (top, right, bottom, left).
+ * - `.mt-*`: Sets top margin.
+ * - `.mr-*`: Sets right margin.
+ * - `.mb-*`: Sets bottom margin.
+ * - `.ml-*`: Sets left margin.
+ * - `.mx-*`: Sets horizontal margins (left and right).
+ * - `.my-*`: Sets vertical margins (top and bottom).
+ * 
+ * Impact:
+ * - By using `rem`, these classes are scalable and responsive. Adjusting the 
+ *   root font size (e.g., for accessibility or responsive design) will 
+ *   automatically scale all spacing values.
+ * - Provides a clean and consistent spacing system, improving code 
+ *   maintainability and reducing redundancy.
+ * 
+ * Example:
+ * - Given `html { font-size: 16px; }`:
+ *     - `.m-1 { margin: 0.25rem; } //4px 
+ *     - `.my-2 { margin-top: 0.5rem; margin-bottom: 0.5rem; } // 8px 
+ */
+
+.m-0 {
+  margin: 0 !important;
+}
+.mt-0,
+.my-0 {
+  margin-top: 0 !important;
+}
+.mr-0,
+.mx-0 {
+  margin-right: 0 !important;
+}
+.mb-0,
+.my-0 {
+  margin-bottom: 0 !important;
+}
+.ml-0,
+.mx-0 {
+  margin-left: 0 !important;
+}
+
+.m-1 {
+  margin: 0.25rem !important;
+}
+.mt-1,
+.my-1 {
+  margin-top: 0.25rem !important;
+}
+.mr-1,
+.mx-1 {
+  margin-right: 0.25rem !important;
+}
+.mb-1,
+.my-1 {
+  margin-bottom: 0.25rem !important;
+}
+.ml-1,
+.mx-1 {
+  margin-left: 0.25rem !important;
+}
+
+.m-2 {
+  margin: 0.5rem !important;
+}
+.mt-2,
+.my-2 {
+  margin-top: 0.5rem !important;
+}
+.mr-2,
+.mx-2 {
+  margin-right: 0.5rem !important;
+}
+.mb-2,
+.my-2 {
+  margin-bottom: 0.5rem !important;
+}
+.ml-2,
+.mx-2 {
+  margin-left: 0.5rem !important;
+}
+
+.m-3 {
+  margin: 1rem !important;
+}
+.mt-3,
+.my-3 {
+  margin-top: 1rem !important;
+}
+.mr-3,
+.mx-3 {
+  margin-right: 1rem !important;
+}
+.mb-3,
+.my-3 {
+  margin-bottom: 1rem !important;
+}
+.ml-3,
+.mx-3 {
+  margin-left: 1rem !important;
+}
+
+.m-4 {
+  margin: 1.5rem !important;
+}
+.mt-4,
+.my-4 {
+  margin-top: 1.5rem !important;
+}
+.mr-4,
+.mx-4 {
+  margin-right: 1.5rem !important;
+}
+.mb-4,
+.my-4 {
+  margin-bottom: 1.5rem !important;
+}
+.ml-4,
+.mx-4 {
+  margin-left: 1.5rem !important;
+}
+
+.m-5 {
+  margin: 2.5rem !important;
+}
+.mt-5,
+.my-5 {
+  margin-top: 2.5rem !important;
+}
+.mr-5,
+.mx-5 {
+  margin-right: 2.5rem !important;
+}
+.mb-5,
+.my-5 {
+  margin-bottom: 2.5rem !important;
+}
+.ml-5,
+.mx-5 {
+  margin-left: 2.5rem !important;
+}
+
+.m-6 {
+  margin: 4rem !important;
+}
+.mt-6,
+.my-6 {
+  margin-top: 4rem !important;
+}
+.mr-6,
+.mx-6 {
+  margin-right: 4rem !important;
+}
+.mb-6,
+.my-6 {
+  margin-bottom: 4rem !important;
+}
+.ml-6,
+.mx-6 {
+  margin-left: 4rem !important;
+}
+
+.m-7 {
+  margin: 6rem !important;
+}
+.mt-7,
+.my-7 {
+  margin-top: 6rem !important;
+}
+.mr-7,
+.mx-7 {
+  margin-right: 6rem !important;
+}
+.mb-7,
+.my-7 {
+  margin-bottom: 6rem !important;
+}
+.ml-7,
+.mx-7 {
+  margin-left: 6rem !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+.pt-0,
+.py-0 {
+  padding-top: 0 !important;
+}
+.pr-0,
+.px-0 {
+  padding-right: 0 !important;
+}
+.pb-0,
+.py-0 {
+  padding-bottom: 0 !important;
+}
+.pl-0,
+.px-0 {
+  padding-left: 0 !important;
+}
+
+.p-1 {
+  padding: 0.25rem !important;
+}
+.pt-1,
+.py-1 {
+  padding-top: 0.25rem !important;
+}
+.pr-1,
+.px-1 {
+  padding-right: 0.25rem !important;
+}
+.pb-1,
+.py-1 {
+  padding-bottom: 0.25rem !important;
+}
+.pl-1,
+.px-1 {
+  padding-left: 0.25rem !important;
+}
+
+.p-2 {
+  padding: 0.5rem !important;
+}
+.pt-2,
+.py-2 {
+  padding-top: 0.5rem !important;
+}
+.pr-2,
+.px-2 {
+  padding-right: 0.5rem !important;
+}
+.pb-2,
+.py-2 {
+  padding-bottom: 0.5rem !important;
+}
+.pl-2,
+.px-2 {
+  padding-left: 0.5rem !important;
+}
+
+.p-3 {
+  padding: 1rem !important;
+}
+.pt-3,
+.py-3 {
+  padding-top: 1rem !important;
+}
+.pr-3,
+.px-3 {
+  padding-right: 1rem !important;
+}
+.pb-3,
+.py-3 {
+  padding-bottom: 1rem !important;
+}
+.pl-3,
+.px-3 {
+  padding-left: 1rem !important;
+}
+
+.p-4 {
+  padding: 1.5rem !important;
+}
+.pt-4,
+.py-4 {
+  padding-top: 1.5rem !important;
+}
+.pr-4,
+.px-4 {
+  padding-right: 1.5rem !important;
+}
+.pb-4,
+.py-4 {
+  padding-bottom: 1.5rem !important;
+}
+.pl-4,
+.px-4 {
+  padding-left: 1.5rem !important;
+}
+
+.p-5 {
+  padding: 2.5rem !important;
+}
+.pt-5,
+.py-5 {
+  padding-top: 2.5rem !important;
+}
+.pr-5,
+.px-5 {
+  padding-right: 2.5rem !important;
+}
+.pb-5,
+.py-5 {
+  padding-bottom: 2.5rem !important;
+}
+.pl-5,
+.px-5 {
+  padding-left: 2.5rem !important;
+}
+
+.p-6 {
+  padding: 4rem !important;
+}
+.pt-6,
+.py-6 {
+  padding-top: 4rem !important;
+}
+.pr-6,
+.px-6 {
+  padding-right: 4rem !important;
+}
+.pb-6,
+.py-6 {
+  padding-bottom: 4rem !important;
+}
+.pl-6,
+.px-6 {
+  padding-left: 4rem !important;
+}
+
+.p-7 {
+  padding: 6rem !important;
+}
+.pt-7,
+.py-7 {
+  padding-top: 6rem !important;
+}
+.pr-7,
+.px-7 {
+  padding-right: 6rem !important;
+}
+.pb-7,
+.py-7 {
+  padding-bottom: 6rem !important;
+}
+.pl-7,
+.px-7 {
+  padding-left: 6rem !important;
+}
+
+
+// Flex Utilities
+.flex-row { display: flex; flex-direction: row; }
+.flex-col { display: flex; flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.grid { display: grid; }
+
+// Responsive Flex Direction
+.flex-col-xs {
+  @media screen and (max-width: 599px) {
+    flex-direction: column;
+  }
+}
+
+/**
+ * fxFlex Utility SCSS
+ * 
+ * This section provides a set of utility classes to emulate and extend the 
+ * functionality of Angular's deprecated `fxFlex` and related features. It 
+ * includes responsive layout helpers, flexbox configurations, and alignment 
+ * utilities designed for consistent and efficient layouts.
+ * 
+ * Key Features:
+ * - **Flexbox Utilities**: Classes for setting flex direction, wrapping, and 
+ *   alignment.
+ * - **Responsive Flex**: Attributes like `[fxFlex]` with customizable values 
+ *   (e.g., `5`, `25`, `100`) to define flexible widths.
+ * - **Layout Utilities**: Predefined flexbox layout options for rows, columns, 
+ *   and gaps.
+ * - **Hide/Show Utilities**: Responsive visibility classes (`fxHide`, 
+ *   `fxShow`) for hiding or displaying elements based on screen sizes.
+ * 
+ * Purpose:
+ * - Offers a flexible and responsive grid system for building layouts.
+ * - Provides utility classes for rapid prototyping or creating reusable layouts.
+ * - Ensures compatibility with designs relying on `fxFlex` syntax by mapping 
+ *   similar functionality through SCSS.
+ * 
+ * Class/Attribute Naming Convention:
+ * - `.flex-*`: Defines flex container properties (`row`, `col`, `wrap`).
+ * - `[fxFlex]`: Configures flex-grow, flex-shrink, and basis for elements.
+ * - `[fxLayout]`: Applies layout settings (`row`, `column`, `row wrap`).
+ * - `[fxHide]` and `[fxShow*]`: Controls element visibility based on media 
+ *   queries.
+ * - `[fxLayoutGap]`: Adds consistent spacing between child elements.
+ * 
+ * Responsive Breakpoints:
+ * - The SCSS uses media queries to adjust layouts at common breakpoints:
+ *     - `sm` (≤ 599px)
+ *     - `gt-sm` (≥ 960px)
+ *     - `lt-lg` (≤ 1279px)
+ * 
+ * Example Usage:
+ * - Responsive row layout with gap:
+ *   ```html
+ *   <div fxLayout="row wrap" fxLayoutGap="16px">
+ *     <div fxFlex="25">Item 1</div>
+ *     <div fxFlex="50">Item 2</div>
+ *     <div fxFlex="25">Item 3</div>
+ *   </div>
+ *   ```
+ * - Hide element on small screens:
+ *   ```html
+ *   <div fxHide.lt-lg>Hidden on small screens</div>
+ *   ```
+ * 
+ * Benefits:
+ * - Simplifies responsive design using predefined classes.
+ * - Enhances maintainability and reusability by adhering to consistent patterns.
+ * - Ensures scalability and accessibility through the use of modern CSS techniques.
+ */
+
+
+// Justify Content Utilities
+.justify-start { justify-content: start; }
+.justify-center { justify-content: center; }
+.space-between { justify-content: space-between; }
+.space-around { justify-content: space-around; }
+
+// Align Items Utilities
+.items-center { align-items: center; }
+
+// fxFlex
+[fxFlex] {
+  flex: 1 1 0%;
+  box-sizing: border-box;
+}
+
+[fxFlex='5'] { max-width: 5%; }
+[fxFlex='20'] { max-width: 20%; }
+[fxFlex='25'] { max-width: 25%; }
+[fxFlex='30'] { max-width: 30%; }
+[fxFlex='33'] { max-width: 33%; }
+[fxFlex='50'] { max-width: 50%; }
+[fxFlex='66'] { max-width: 66%; }
+[fxFlex='67'] { max-width: 67%; }
+[fxFlex='70'] { max-width: 70%; }
+[fxFlex='80'] { max-width: 80%; }
+[fxFlex='100'] { max-width: 100%; }
+
+[fxFlex='1 0 auto'] { flex: 1 0 auto; }
+[fxFlex='0 1 auto'] { flex: 0 1 auto; }
+
+// Responsive fxFlex
+@media screen and (max-width: 959px) {
+  [fxFlex_sm='60'] { max-width: 80%; }
+}
+
+@media screen and (min-width: 960px) {
+  [fxFlex_gt-sm='30'] { max-width: 30%; }
+  [fxFlex_gt-sm='40'] { max-width: 40%; }
+}
+
+// fxLayout
+[fxLayout] {
+  display: flex !important;
+  box-sizing: border-box;
+}
+
+[fxLayout='row'] { flex-direction: row; }
+[fxLayout='column'] { flex-direction: column !important; }
+[fxLayout='row wrap'] { flex-flow: row wrap; flex: 1 1 1e-9px; }
+
+// fxLayoutGap
+[fxLayoutGap='8px'] > *:not(:last-child) { margin-right: 8px; }
+[fxLayoutGap='12px'] > *:not(:last-child) { margin-right: 12px; }
+[fxLayoutGap='16px'] > *:not(:last-child) { margin-right: 16px; }
+[fxLayoutGap='24px'] > *:not(:last-child) { margin-right: 24px; }
+[fxLayoutGap='32px'] > *:not(:last-child) { margin-right: 32px; }
+
+// fxLayoutAlign
+[fxLayoutAlign='center center'] { place-content: center; align-items: center; }
+[fxLayoutAlign='start center'] { place-content: center flex-start; align-items: center; }
+[fxLayoutAlign='end center'] { place-content: center flex-end; align-items: center; }
+[fxLayoutAlign='space-between center'] { place-content: center space-between; align-items: center; }
+[fxLayoutAlign='stretch stretch'] { place-content: stretch flex-start; align-items: stretch; }
+
+// fxHide and fxShow
+[fxHide] { display: none; }
+
+@media screen and (max-width: 1279px) {
+  [fxHidelt-lg] { display: none !important; }
+}
+
+@media screen and (min-width: 1280px) {
+  [fxHidegt-md] { display: none !important; }
+}
+
+@media screen and (min-width: 600px) {
+  [fxShowgt-xs] { display: initial; }
+}
+
+@media screen and (min-width: 960px) {
+  [fxShowgt-sm] { display: initial; }
+}
+
+// fxFill
+[fxFill] {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  min-width: 100%;
+}
