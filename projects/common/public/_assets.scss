@@ -1,0 +1,16 @@
+
+@mixin header-render(){
+    .content-header {
+        &.bg-image {
+            background-image: url("/img/header-bg.png");
+        }
+    }
+}
+
+@mixin top-render(){
+    .info-content{
+        &.has-bg-image{
+            background-image: url("/img/header-bg.png");
+        }
+    }
+}

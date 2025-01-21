@@ -1,0 +1,14 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/common",
+  "assets": [
+              {
+                "glob": "**/*",
+                "input": "public",
+                "output": "assets/"
+              }
+            ],
+  "lib": {
+    "entryFile": "src/index.ts"
+  }
+}

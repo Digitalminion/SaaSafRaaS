@@ -1,0 +1,30 @@
+export interface RequestInterface {
+    id: string;
+    entity_id: string;
+    organization_id: string;
+    account_id: string;
+    cloud: string;
+    friendly_account_name: string;
+    region_name: string;
+    bastion_arn: string;
+    access_arn: string;
+    bucket: string;
+    bucket_path: string;
+    enumeration_subscription: string;
+    enumeration_targets: string;
+    analyzer_subscription: string;
+    verbose: string;
+    findings: any;
+    EnumeratorObj: string;
+    runstartdate: string;
+    runenddate: string;
+    created: string;
+    updated: string;
+    deleted: string;
+    observation_result_file: string;
+    finding_result_file: string;
+    observation_result_log: string;
+    finding_result_log: string;
+    status: string;
+    showSpinner: boolean;
+}

@@ -1,0 +1,14 @@
+<div class="breadcrumb p-2 flex-row">
+    <a routerLink="/" class="breadcrumb-item flex-row justify-start items-center"  (click)="closeSubMenus()">
+        <mat-icon>home</mat-icon>
+        <span class="breadcrumb-title">Home</span>
+    </a>
+    @if (breadcrumbs.length) {
+        @for (breadcrumb of breadcrumbs; track breadcrumb; let i = $index) {
+            <div class="breadcrumb-item flex-row justify-start items-center">
+                <a [hidden]="i == (breadcrumbs.length - 1)" [routerLink]="[breadcrumb.url]">{{breadcrumb.name}}</a>
+                <span [hidden]="i != (breadcrumbs.length - 1)" class="breadcrumb-title active">{{breadcrumb.name}}</span>
+            </div>
+        } 
+    } 
+</div>
